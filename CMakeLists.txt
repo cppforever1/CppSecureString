@@ -14,8 +14,8 @@ add_library(CppSecureString::CppSecureString ALIAS CppSecureString)
 target_compile_features(CppSecureString PUBLIC cxx_std_20)
 target_include_directories(CppSecureString
     PUBLIC
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-        $<INSTALL_INTERFACE:include>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
 )
 
 if(WIN32)
@@ -66,4 +66,3 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/CppSecureStringConfigVersion.cmake
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/CppSecureString
 )
-
