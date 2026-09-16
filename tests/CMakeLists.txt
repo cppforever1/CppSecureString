@@ -1,0 +1,3 @@
+add_executable(CppSecureStringTests secure_string_tests.cpp)
+target_link_libraries(CppSecureStringTests PRIVATE CppSecureString::CppSecureString)
+add_test(NAME CppSecureStringTests COMMAND CppSecureStringTests)
